@@ -1,0 +1,77 @@
+h1 {
+  margin-bottom: 0px;
+}
+
+.about-list {
+  padding-left: 0px;
+}
+.bill {
+  font-size: 22px;
+  padding-top: 12px;
+}
+
+.account-form-title {
+  margin-block-end: 10px;
+  margin-bottom: 0px;
+}
+
+.btn-save-form{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit-profile-btn {
+  padding: 0px;
+  font-size: 18px; /* Tăng kích thước font để icon lớn hơn */
+  background: none; /* Xóa background mặc định của button nếu cần */
+  border: none; /* Xóa border mặc định của button nếu cần */
+  cursor: pointer; /* Thay đổi con trỏ thành pointer khi hover */
+}
+
+.btn-cart {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.social-list {
+  padding-left: 0px;
+}
+.meta-info {
+  margin-bottom: 0px;
+}
+.form-account {
+  margin-block-start: 5px;
+}
+
+.footer-list > li {
+  margin-bottom: 0px;
+}
+.footer-list-item {
+  margin-bottom: 0px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px; /* Đặt kích thước cho .profile-photo nếu cần */
+  height: 90px; /* Đặt kích thước cho .profile-photo nếu cần */
+  overflow: hidden;
+  border-radius: 50%; /* Tạo hình tròn cho hình ảnh nếu cần */
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}

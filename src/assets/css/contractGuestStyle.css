@@ -1,0 +1,194 @@
+a {
+  text-decoration: none !important;
+}
+
+.header.active {
+  position: fixed;
+  top: -95px !important;
+}
+
+.contractForm .btn-secondary {
+  background-color: rgb(105, 112, 116) !important;
+}
+
+.paymentCard .btn-secondary {
+  background-color: rgb(105, 112, 116) !important;
+}
+
+.input-hienthi {
+  background-color: #e9e9e9 !important;
+}
+
+.input-hienthi-popup {
+  background: radial-gradient(circle, white 10%, #fcf0dc);
+}
+
+.btn-vnp {
+  background-color: #2e80c9 !important;
+  /* height: 35px !important; */
+  padding-inline: 10px !important;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn-sua {
+  padding-inline: 5px !important;
+  height: 30px !important;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn-xoa {
+  background-color: #ff2a00 !important;
+  padding-inline: 5px !important;
+  height: 30px !important;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn-huy {
+  background-color: #ff2a00 !important;
+}
+
+.btn-modal-search {
+  height: fit-content;
+  padding-inline: 5px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.btn-modal-search:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.btn-modal-search-speech {
+  height: fit-content;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-inline: 5px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+} 
+
+.btn-modal-search-speech:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.btn-modal-confirm {
+  background-color: #2e80c9 !important;
+  height: 35px !important;
+  padding-inline: 10px !important;
+}
+
+.btn-modal-delete-huy {
+  background-color: rgb(105, 112, 116) !important;
+  height: 35px !important;
+  padding-inline: 10px !important;
+}
+
+.btn-modal-delete {
+  background-color: #ff2a00 !important;
+  height: 35px !important;
+  padding-inline: 10px !important;
+}
+
+.header {
+  --color: var(--white);
+  --btn-color: var(--champagne-pink);
+
+  width: 100%;
+  padding-block: 20px;
+  border-block-end: 1px solid var(--champagne-pink_20);
+  background: url("../images/wedding-1-small.jpg") no-repeat center center/cover; /* Đặt hình nền cho header */
+  z-index: 4;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+}
+
+.section-divider.white::after {
+  background-image: url("../images/shape-white.png");
+}
+
+.section-divider.gray::after {
+  background-image: url("../images/shape-grey.png");
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container input {
+  width: 100% !important;
+}
+
+.modal-location {
+  position: absolute;
+  top: -100px;
+}
+
+.bank-option {
+  display: flex;
+  flex-direction: column; /* Hiển thị theo chiều dọc */
+  align-items: center; /* Căn giữa theo trục ngang */
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.2rem;
+  padding-right: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.bank-option:hover {
+  border-color: var(--dark-orange);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bank-option.selected {
+  border-color: var(--dark-orange);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bank-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Căn giữa theo trục dọc */
+  justify-content: center; /* Căn giữa theo trục ngang */
+  gap: 0.5rem; /* Khoảng cách giữa ảnh và chữ */
+}
+
+
+.bank-content img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bank-content p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem; /* Tăng kích thước chữ */
+}
+
+.menu-contract-font {
+  font-family: 'Lobster, cursive' !important;
+}
+
+.card-location:hover {
+  background-color: rgba(108, 108, 108, 0.1);
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.form-account {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .left-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-column{
+    margin-left: 100px;
+  }
+  .left-column{
+    margin-left: 60px;
+  }
+  .input-wrapper {
+    margin-bottom: 15px;
+  }
+  .selected-image {
+    border: 2px solid hsl(32, 100%, 59%); /* Màu viền */
+    border-radius: 5px; /* Bo góc */
+    padding: 5px; /* Khoảng cách giữa ảnh và viền */
+  }
+  label{
+    color: #000000;
+    font-weight: 600;
+  }
+  .update-btn {
+    /* color: hsl(32, 100%, 59%); */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu */
+  }
+  
+  .edit-icon:hover {
+    color: black; /* Khi hover, màu sẽ chuyển thành đen */
+  }
+  .userInfoForm{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  
+  
+    

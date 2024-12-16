@@ -1,0 +1,819 @@
+
+.menu-container {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  margin-top: 100px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.menu-left {
+  width: 68%;
+  background-color: #f1e8d3; /* Màu nền sáng hơn */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+  
+}
+
+
+.scroll-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: hsl(32, 100%, 69%);
+}
+
+.scroll-button:hover {
+  color: #333;
+}
+
+
+
+.menu-item:last-child {
+  border-bottom: none; /* Không hiển thị border cho món ăn cuối cùng */
+}
+
+/* Hình ảnh món ăn */
+.menu-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Chi tiết món ăn */
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-name {
+  font-weight: bold;
+}
+
+.menu-item-price {
+  color: #888;
+  font-size: 0.9em;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: hsl(32, 100%, 59%);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  color: #fff;
+}
+
+.tab.active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.tab:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px); /* Hiệu ứng nâng lên khi hover */
+}
+
+.tab-content {
+  background-color: #f1f1ea;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Center items */
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa các thẻ */
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Bo tròn hơn */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Nền trắng cho thẻ */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.smaller-card {
+  flex: 0.4;
+  opacity: 0.7; /* Giảm độ nổi bật cho thẻ nhỏ */
+}
+
+.small-card-h4{
+  text-align: center;
+}
+
+.menu-right {
+  width: 30%;
+  background-color: #f1f1ea; /* Màu nền tùy chọn */
+  padding: 20px;
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: #f1e8d3 solid 20px ;
+}
+
+.menu-right h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.menu-section {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.menu-section h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #007bff; /* Màu của dấu "+" */
+  transition: color 0.3s;
+}
+
+.add-icon:hover {
+  color: #0056b3; /* Màu khi hover */
+}
+
+
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+ 
+.menu-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+}
+.has-scrollbar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Cho phép thanh cuộn ngang */
+  scroll-snap-type: inline mandatory; /* Đảm bảo cuộn có thể dừng lại ở các phần tử con */
+  padding-block-end: 40px; /* Giữ khoảng cách dưới cùng */
+  scroll-behavior: smooth; /* Tùy chọn để cuộn mượt mà */
+  flex-wrap: nowrap; /* Đảm bảo các phần tử con không xuống dòng */
+  width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+}
+
+
+.menu-item-name {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.menu-item-price {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Định dạng cho nút Xem menu và Tạo menu */
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.create-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.create-button:hover {
+  background-color: #218838;
+}
+
+.menu-container {
+  display: flex;
+}
+
+
+.menu-right {
+  width: 30%;
+  padding-left: 20px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-card {
+  width: 50%; /* Kích thước của card chính */
+  background-color: #ffebbf;
+}
+
+.main-card h3{
+  color: #000;
+  text-align: center;
+}
+
+.small-card {
+  width: 30%; /* Kích thước của các card nhỏ */
+
+  opacity: 0.6; /* Để card nhỏ mờ hơn một chút */
+}
+
+.small-card:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  flex-wrap: wrap; /* Cho phép các món ăn quấn */
+  gap: 10px; /* Khoảng cách giữa các món ăn */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  
+}
+
+.menu-item {
+  display: flex; /* Để căn chỉnh hình ảnh và thông tin */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước */
+  width: 100%;
+  padding-left: 22px;
+  transition: background-color 0.3s ease;
+}
+
+
+.menu-section {
+  position: relative;
+}
+
+.add-button {
+  float: right;
+  font-size: 10px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.remove-button {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  font-size: 14px;
+  color: red;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.create-menu,
+.view-menu{
+  border-radius: 5px;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.modal-custom {
+  position: fixed;
+  top: 20px; /* Khoảng cách từ đỉnh */
+  left: 20px; /* Khoảng cách từ bên trái */
+  max-width: 400px; /* Chiều rộng tối đa */
+  width: 100%; /* Đặt chiều rộng modal bằng 100% */
+  z-index: 1050; /* Đảm bảo modal nằm trên các phần tử khác */
+}
+
+.modal-content {
+  border-radius: 8px; /* Làm mềm các góc của modal */
+  overflow: hidden; /* Ẩn các phần tử tràn ra ngoài */
+}
+
+.modal-header, .modal-body, .modal-footer {
+  padding: 15px; /* Đặt padding cho các phần tử bên trong modal */
+}
+
+
+.tab2-content {
+  display: flex; /* Xếp các phần tử theo hàng ngang */
+  gap: 20px; /* Khoảng cách giữa menu và chat */
+}
+
+.menu-section {
+  flex: 2; /* Chiếm 2 phần trong tổng 6 phần */
+  border: 1px solid #ccc; /* Đường viền cho menu */
+  padding: 10px; /* Khoảng cách bên trong */
+  background-color: #f9f9f9a5; /* Màu nền cho menu */
+  max-height: 600px; /* Chiều cao tối đa cho menu */
+  overflow-y: auto; /* Cuộn dọc nếu có nhiều mục menu */
+}
+
+.chat-section {
+  flex: 3; /* Chiếm 3 phần trong tổng 6 phần */
+  display: flex; 
+  flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các phần tử */
+  border: 1px solid #ccc; /* Đường viền cho chat */
+  padding: 10px; /* Khoảng cách bên trong */
+  background-color: #f9f9f9; /* Màu nền cho chat */
+}
+
+.messages {
+  max-height: 400px; /* Chiều cao tối đa cho danh sách tin nhắn */
+  overflow-y: auto; /* Cuộn dọc nếu có nhiều tin nhắn */
+}
+
+.chat-input {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh textarea và nút */
+  gap: 10px; /* Khoảng cách giữa textarea và nút gửi */
+}
+
+textarea {
+  width: 100%; /* Chiều rộng 100% cho textarea */
+  padding: 5px; /* Khoảng cách bên trong */
+  border: 1px solid #ccc; /* Đường viền */
+  border-radius: 4px; /* Bo góc cho textarea */
+}
+
+.send-button {
+  padding: 5px 10px; /* Khoảng cách bên trong nút */
+  border: none; /* Bỏ viền */
+  background-color: #007bff; /* Màu nền cho nút */
+  color: white; /* Màu chữ */
+  border-radius: 4px; /* Bo góc cho nút */
+  cursor: pointer; /* Đổi con trỏ khi di chuột qua nút */
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.choose-combobox{
+  width: 200px;
+  height: 30px;
+}
+
+.carousel {
+  overflow: hidden; /* Ẩn phần không nằm trong viewport */
+}
+
+.carousel-card {
+  border: 1px solid #ccc; /* Thêm đường viền cho mỗi menu */
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+  opacity: 0.6; /* Mờ cho tất cả các menu */
+  padding-bottom: 20px; 
+  background-color: #fff;
+  height: 370px;
+}
+
+.carousel-card h3{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+
+/* Menu chính ở giữa */
+.carousel-card.active {
+  transform: scale(1.1);
+  opacity: 1; /* Độ mờ bình thường */
+  z-index: 2; /* Đưa menu chính lên trên cùng */
+  margin-top: 30px;
+  height: 400px !important; 
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.carousel-card.active .menu-item-name {
+  font-size: 10px !important;
+}
+
+.carousel-card.active .menu-item-price {
+  font-size: 10px !important;
+}
+
+.carousel-card:not(.active) .menu-item-name {
+  font-size: 8px !important;
+}
+.carousel-card:not(.active) .menu-item-price {
+  font-size: 8px !important;
+}
+
+.carousel-card:not(.active) .menu-item-image {
+  width: 35px;
+  height: 35px;
+}
+
+/* Menu bên trái và bên phải */
+.carousel-card:not(.active) {
+  transform: scale(0.8); /* Thu nhỏ các menu bên */
+  opacity: 0.6; /* Độ mờ bình thường */
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+/* Đảm bảo chỉ menu chính hiển thị rõ ràng */
+.carousel-card:not(.active) {
+  position: relative; /* Giữ vị trí tương đối */
+  z-index: 1; /* Đặt thấp hơn so với menu chính */
+}
+/* 
+.carousel-card:not(.active).left-menu {
+  transform: skewY(-3deg) translateY(-10px);
+  transform-origin: top right;
+}
+ 
+.carousel-card:not(.active).right-menu {
+  transform: skewY(3deg) translateY(-10px);
+  transform-origin: top left;
+} */
+
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Căn trái cho các mục */
+}
+
+.menu-content h4 {
+  padding-left: 10px;
+}
+
+.menu-item {
+  display: flex;
+  flex: 1 1 calc(48% - 10px); /* 1 hoặc 2 món trên 1 hàng */
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.menu-item-image {
+  width: 50px; /* Kích thước hình ảnh nhỏ */
+  height: 50px; /* Kích thước hình ảnh nhỏ */
+  margin-right: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list h4 {
+  margin: 10px 0;
+}
+
+.size-select {
+  padding: 4px 6px; /* Khoảng cách bên trong */
+  border: 1px solid #ccc; /* Đường viền */
+  background-color: #f9f9f9; /* Màu nền */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp khi thay đổi màu viền */
+  width: 48px;
+  margin-left: 15px;
+}
+
+/* Hiệu ứng khi di chuột qua */
+.size-select:hover {
+  border-color: hsl(32, 100%, 59%); /* Thay đổi màu viền khi di chuột qua */
+}
+
+/* Hiệu ứng khi chọn */
+.size-select:focus {
+  outline: none; /* Ẩn đường viền mặc định của trình duyệt */
+  border-color: hsl(32, 100%, 59%); /* Thay đổi màu viền khi có tiêu điểm */
+  box-shadow: 0 0 5px hsl(32, 100%, 59%); /* Thêm bóng đổ */
+}
+
+.size-select .size-option:hover{
+  background-color: hsl(32, 100%, 78%) !important;
+}
+
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các item nhảy lên hàng trên khi không đủ chỗ */
+}
+
+.max-items-2 .menu-item {
+  display: inline;
+  flex: 1 1 calc(48% - 10px); /* 1 hoặc 2 món trên 1 hàng */
+  margin: 5px;
+}
+
+.max-items-3 .menu-item {
+  flex: 1 1 calc(30% - 10px); /* 3 món trên 1 hàng */
+  margin: 5px;
+}
+
+/* Định nghĩa class cho số hàng */
+.max-rows-2 .menu-item {
+  flex: 1 1 calc(33.33% - 10px); /* Hàng đầu tiên có tối đa 3 món, hàng thứ hai có 2 món */
+}
+
+.food-category{
+  background-color: #fff;
+  border: 1px solid #343434;
+  border-radius: 5px;
+  background-image: url("../images/menu-br-img.png");
+  height: 100% !important;
+}
+
+
+.menu-category img {
+  width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+  height: auto;
+  border-radius: 4px;
+}
+
+.menu-category ul li {
+  height: 100%;
+}
+
+.food-category {
+  padding: 20px;
+}
+
+
+/* .menu-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-category li {
+  flex: 1 1 45%; 
+  max-width: 30%; 
+  margin: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+} */
+
+.menu-category li img {
+  width: 100%;
+  height: auto;
+  max-width: 130px;
+}
+
+.menu-category li p {
+  font-size: 8px;
+  /* font-weight: 600; */
+  color: #1e1e1e;
+}
+
+.food-category{
+  border-radius: 1rem !important;
+}
+
+.swiper_container{
+  height: 100% !important;
+}
+
+.swiper-slide{
+  height: 537px !important;
+}
+
+.menu-category-dish{
+  width: 100% !important;
+  padding-bottom: 2px;
+}
+
+.menu-category-dish img {
+  width: 100px; /* Adjusts image width as needed */
+  height: auto;
+}
+
+.menu-category-dish {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents items from wrapping to the next line */
+}
+
+.menu-category-dish ul {
+  display: flex; /* Aligns items horizontally */
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Removes default bullet points */
+}
+
+.menu-category-dish li {
+  flex: 0 0 auto; /* Keeps list items at their natural width */
+  text-align: center;
+  /* flex: 1 1 45%;  */
+  width: 60px; /* 
+}
+
+.menu-category-dish img {
+  width: 100px; /* Set the image size */
+  height: auto;
+}
+
+/* .modal-dialog{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+  transform: scale(0.75);
+}
+  */
+
+/* .modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  animation: slideDown 0.3s forwards;
+ 
+}  */
+
+/* Container để chứa các button */
+.button-container {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh theo chiều ngang */
+  
+}
+
+/* Button có thể giữ các kiểu dáng hiện tại */
+.btn-save-form {
+  font-size: 0.85rem; /* Nếu cần giảm kích thước chữ */
+}
+
+
+
+.chiTietThucDon {
+  width: 420px; /* Để chiều rộng tự động điều chỉnh theo nội dung */
+  height: 594px; /* Để chiều cao tự động điều chỉnh theo nội dung */
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-image: url("../images/backroundthucdon.png");
+}
+
+.chiTietThucDon h2{
+  text-align: center;
+}
+
+.chiTietThucDon h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.chiTietThucDon p {
+  font-size: 1rem;
+  color: #666;
+  width: 100%;
+  text-align: center;
+}
+
+.chiTietThucDon ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%
+}
+
+.chiTietThucDon ul li {
+  font-size: 1.5rem;
+  color: #555;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.chiTietThucDon ul li strong {
+  font-weight: bold;
+}
+
+/* Category Titles */
+.chiTietThucDon h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsl(32, 100%, 59%);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+
+.swiper-slide {
+  position: relative;
+}
+
+.choose-menu-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.swiper-slide:hover .choose-menu-btn {
+  display: block;
+}
+
+
+.menu-view-control{
+  margin-top: 98px;
+}
+
+.menu-view-control h3 {
+  font-size: 1.8rem;
+  width: 124px;
+  text-align: center;
+  color: #341c0e;
+  font-family: 'Crimson Pro', serif;
+}
+
+.menu-view-control ul{
+  padding-top: 4px;
+}

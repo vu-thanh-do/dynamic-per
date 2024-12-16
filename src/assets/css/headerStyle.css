@@ -1,0 +1,39 @@
+.header-icon {
+    font-size: 24px;
+}
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .account-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+    width: 160px;
+  }
+  
+  .account-dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #141414;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .account-dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #f5f5f5;
+    color: hsl(28, 100%, 58%);
+  }
+  
+  .account-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

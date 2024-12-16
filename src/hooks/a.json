@@ -1,0 +1,134 @@
+{
+    "name": "ADMIN",
+    "description": "Quản trị viên",
+    "permissions": [
+        {
+            "name": "DELETE_LOCATION",
+            "description": "Xóa"
+        },
+        {
+            "name": "CREATE_EVENT",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "READ_DISH",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "UPDATE_SERVICES",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "READ_USER",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "UPDATE_INGREDIENT",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "READ_LOCATION",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "UPDATE_DISH",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "READ_MENU",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "UPDATE_CONTRACT",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "CREATE_LOCATION",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "DELETE_USER",
+            "description": "Xóa"
+        },
+        {
+            "name": "UPDATE_EVENT",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "DELETE_MENU",
+            "description": "Xóa"
+        },
+        {
+            "name": "CREATE_INGREDIENT",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "CREATE_MENU",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "READ_CONTRACT",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "DELETE_EVENT",
+            "description": "Xóa"
+        },
+        {
+            "name": "CREATE_USER",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "UPDATE_LOCATION",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "CREATE_DISH",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "CREATE_CONTRACT",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "UPDATE_MENU",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "UPDATE_USER",
+            "description": "Cập nhật"
+        },
+        {
+            "name": "CREATE_SERVICES",
+            "description": "Thêm mới"
+        },
+        {
+            "name": "READ_EVENT",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "DELETE_DISH",
+            "description": "Xóa"
+        },
+        {
+            "name": "DELETE_CONTRACT",
+            "description": "Xóa"
+        },
+        {
+            "name": "READ_SERVICES",
+            "description": "Xem danh sách"
+        },
+        {
+            "name": "DELETE_INGREDIENT",
+            "description": "Xóa"
+        },
+        {
+            "name": "DELETE_SERVICES",
+            "description": "Xóa"
+        },
+        {
+            "name": "READ_INGREDIENT",
+            "description": "Xem danh sách"
+        }
+    ]
+}
